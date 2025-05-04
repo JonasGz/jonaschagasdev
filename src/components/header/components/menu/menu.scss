@@ -1,0 +1,13 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  
+  &__span {
+    background-color: #fff;
+    height: 0.5rem;
+    display: block;
+    width: 3.4rem;
+    border-radius: 1rem;
+  }
+}
