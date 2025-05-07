@@ -1,11 +1,11 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Tech } from './components/tech/tech'
 import './technologies.scss'
-import { useWorkScroll } from '../../hooks/use-work-scroll'
+import { useScroll } from '../../hooks/use-scroll'
 
 export const Technologies = () => {
 
-    const {containerRef, handleNext, handlePrev} = useWorkScroll();
+    const {containerRef, handleNext, handlePrev} = useScroll();
 
     return(
         <div className='technologies'>

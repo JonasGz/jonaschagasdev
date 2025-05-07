@@ -1,10 +1,10 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Work } from "./components/work/work";
-import { useWorkScroll } from "../../hooks/use-work-scroll";
+import { useScroll } from "../../hooks/use-scroll";
 import "./works.scss";
 
 export const Works = () => {
-  const { containerRef, handleNext, handlePrev } = useWorkScroll();
+  const { containerRef, handleNext, handlePrev } = useScroll();
 
   return (
     <div className="works">

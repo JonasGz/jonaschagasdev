@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-export const useWorkScroll = () => {
+export const useScroll = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   const handleNext = () => {
