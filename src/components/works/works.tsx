@@ -17,17 +17,17 @@ export const Works = () => {
       <div className="works__items" ref={containerRef}>
         <Work
           key={crypto.randomUUID()}
-          img=""
-          tags={["React", "TypeScript"]}
+          img="/assets/projects/petdex.png"
+          tags={["JavaScript", "HTML", "SCSS", "Firebase"]}
           title="PetDex"
-          description="Projeto open source"
+          description="Aplicativo que transforma a experiência de ser tutor de pets em algo único e interativo. Com o PetDex, os tutores podem catalogar e compartilhar informações sobre seus pets, semelhante à famosa Pokedex, mas para animais de estimação."
         />
         <Work
           key={crypto.randomUUID()}
-          img=""
-          tags={["React", "TypeScript"]}
-          title="PetDex"
-          description="Projeto open source"
+          img="/assets/projects/schedule.png"
+          tags={["React", "Nextjs", "Firebase"]}
+          title="Schedule App"
+          description="O Schedule PWA é um projeto mobile/desktop com a tecnologia PWA (Progressive Web App) com o objetivo de possibilitar o agendamento de tarefas."
         />
       </div>
       <ChevronRight
