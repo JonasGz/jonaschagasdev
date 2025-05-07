@@ -2,6 +2,7 @@ import './contact.scss'
 
 type ContactProps = {
     url: string;
+    href?: string;
     name: string;
     description: string;
 }
@@ -10,8 +11,7 @@ export const Contact = (props : ContactProps) => {
 
     return(
         <div className='contact'>
-            <img src={props.url} alt={props.name} title={props.name} />
-            {/* <h3>{props.name}</h3> */}
+            <a href={props.href} target='_blank'><img src={props.url} alt={props.name} title={props.name} /></a>
             <span>{props.description}</span>
         </div>
     )
