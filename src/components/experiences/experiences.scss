@@ -1,0 +1,13 @@
+.experiences {
+    display: flex;
+    align-items: center;
+    
+    &__items {
+      display: flex;
+      padding: 0 1rem;
+      overflow: hidden;
+      gap: 2rem;
+      flex-direction: column;
+    }
+  
+  }
