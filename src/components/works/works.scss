@@ -1,0 +1,21 @@
+.works {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  &__btn {
+    height: max-content;
+    background-color: #000;
+    border: 0.2rem solid #743BC8;
+    border-radius: 1rem;
+    display: flex;
+  }
+  
+  &__items {
+    display: flex;
+    width: 28.4rem;
+    overflow: hidden;
+  }
+
+}
+
