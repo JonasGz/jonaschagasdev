@@ -2,6 +2,7 @@ import "./App.scss";
 import { About } from "./components/about/about";
 import { Contacts } from "./components/contact/contacts";
 import { Experiences } from "./components/experiences/experiences";
+import { Footer } from "./components/footer/footer";
 import { Header } from "./components/header/header";
 import { Technologies } from "./components/technologies/technologies";
 import { Works } from "./components/works/works";
@@ -29,6 +30,7 @@ function App() {
         <div className="app__section-title">Contato</div>
         <Contacts />
       </section>
+      <Footer />
     </div>
   );
 }
