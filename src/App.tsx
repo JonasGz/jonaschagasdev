@@ -1,6 +1,6 @@
 import "./App.scss";
 import { About } from "./components/about/about";
-import { Contacts } from "./components/contact/contacts";
+import { Contacts } from "./components/contacts/contacts";
 import { Experiences } from "./components/experiences/experiences";
 import { Footer } from "./components/footer/footer";
 import { Header } from "./components/header/header";
