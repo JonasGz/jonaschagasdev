@@ -4,7 +4,7 @@
   padding: 0.2rem;
   border-radius: 2rem;
   width: 100%;
-  min-width: 28rem;
+  min-width: 26rem;
   color: #b8b8b8;
 
   & > &__container {
@@ -21,9 +21,14 @@
     border-radius: 1rem;
     display: flex;
     justify-content: center;
-    width: 25.2rem;
-    height: 20rem;
+    width: 100%;
     align-items: center;
+
+    & img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
   }
 
   &__tags {

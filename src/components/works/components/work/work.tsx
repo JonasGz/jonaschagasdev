@@ -12,13 +12,7 @@ export const Work = (props: WorkProps) => {
     <div className="work">
       <div className="work__container">
         <div className="work__img">
-          <img
-            src={props.img}
-            alt={props.title}
-            title={props.title}
-            width={180}
-            height={180}
-          />
+          <img src={props.img} alt={props.title} title={props.title} />
         </div>
         <div className="work__tags">
           {props.tags.map((tag) => (

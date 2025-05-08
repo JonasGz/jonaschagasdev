@@ -2,12 +2,40 @@
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
-  
-  &__span {
-    background-color: #fff;
-    height: 0.5rem;
-    display: block;
-    width: 3rem;
-    border-radius: 1rem;
+  z-index: 2;
+
+  &__content {
+    width: 0%;
+    height: 100vh;
+    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+    color: white;
+    z-index: 1;
+    
+    & ul {
+      position: relative;
+      top: 8rem;
+      list-style-type: none;
+    }
+
+    & a {
+      all: unset;
+    }
+
+    & li {
+      display: flex;
+      gap: 1.4rem;
+      padding: 1.4rem;
+      border-bottom: 0.1rem solid #222;
+      max-width: 16rem;
+    }
+    
+
+    &--open {
+      width: 80%;
+    }
   }
 }

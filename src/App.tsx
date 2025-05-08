@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <section id="about">
+      <section id="about" className="app__section app__about">
         <About />
       </section>
       <section id="works" className="app__section">
