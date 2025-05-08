@@ -1,0 +1,51 @@
+.navbar {
+
+  &__content {
+    display: flex;
+    list-style-type: none;
+    gap: 4rem;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  &__item {
+    background: transparent;
+    padding: 0.1rem;
+
+    & > &__container {
+      background:transparent;
+      padding: 0.6rem 0;
+    }
+  }
+
+  &__item--active {
+    background: linear-gradient(90deg, #964CF0, #170033);
+    padding: 0.1rem;
+    border-radius: 2rem;
+
+    & > &__container {
+      background: #000;
+      border-radius: 1.9rem;
+      padding: 0.6rem 3rem;
+    }
+  }
+}
+
+
+
+// .experience {
+//   display: flex;
+//   background: linear-gradient(0deg, #170033, #964CF0);
+//   padding: 0.2rem;
+//   border-radius: 2rem;
+//   width: 100%;
+//   min-width: 28rem;
+//   color: #b8b8b8;
+
+//   & > &__container {
+//     background: #000;
+//     border-radius: 1.9rem;
+//     padding: 1.4rem;
+//     width: 100%;
+//   }

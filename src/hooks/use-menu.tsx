@@ -12,6 +12,7 @@ export const useMenu = () => {
 
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
+      window.history.pushState(null, "", `#${id}`);
     }
     setShowMenu(false);
   };

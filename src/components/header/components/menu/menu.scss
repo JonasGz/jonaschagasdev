@@ -39,3 +39,9 @@
     }
   }
 }
+
+@media(min-width: 728px) {
+  .menu {
+    display: none;
+  }
+}

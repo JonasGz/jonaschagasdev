@@ -27,3 +27,11 @@
   }
   
 }
+
+@media (min-width: 728px) {
+  .app {
+    &__about {
+      margin-top: 0;
+    }
+  }
+}

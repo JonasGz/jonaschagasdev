@@ -15,3 +15,17 @@
     justify-content: center;
   }
 }
+
+
+@media (min-width: 728px) {
+  .header {
+    background-color: transparent;
+    position: relative;
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    &__logo {
+      display: none;
+    }
+  }
+}

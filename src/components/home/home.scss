@@ -1,0 +1,45 @@
+.home {
+  display: flex;
+  width: 100%;
+  color: #dfdfdf;
+  align-items: center;
+  justify-content: space-around;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__hello {
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+
+  &__name {
+    color: #743BC8;
+    margin: 0;
+  }
+
+  &__category {
+    font-size: 1.8rem;
+  }
+
+  &__rocket {
+
+    & img {
+      width: 22rem;
+    }
+  }
+
+  &__button {
+    background-color: #743BC8;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 400;
+    border-radius: 0.3rem;
+    padding: 1rem 4rem;
+    width: max-content;
+    cursor: pointer;
+  }
+}
