@@ -6,16 +6,29 @@
   &__btn {
     height: max-content;
     background-color: #000;
-    border: 0.2rem solid #743BC8;
+    border: 0.2rem solid #743bc8;
     border-radius: 1rem;
     display: flex;
   }
-  
+
   &__items {
     display: flex;
     width: 26.4rem;
     overflow: hidden;
   }
-
 }
 
+@media (min-width: 768px) {
+  .works {
+    &__btn {
+      display: none;
+    }
+
+    &__items {
+      width: 100%;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}

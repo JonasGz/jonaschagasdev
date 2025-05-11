@@ -20,14 +20,42 @@ export const Works = () => {
           img="/assets/projects/petdex.png"
           tags={["JavaScript", "HTML", "SCSS", "Firebase"]}
           title="PetDex"
-          description="Aplicativo que transforma a experiência de ser tutor de pets em algo único e interativo. Com o PetDex, os tutores podem catalogar e compartilhar informações sobre seus pets, semelhante à famosa Pokedex, mas para animais de estimação."
+          description="Aplicativo que transforma a experiência de ser tutor de pets."
         />
         <Work
           key={crypto.randomUUID()}
           img="/assets/projects/schedule.png"
           tags={["React", "Nextjs", "Firebase"]}
           title="Schedule App"
-          description="O Schedule PWA é um projeto mobile/desktop com a tecnologia PWA (Progressive Web App) com o objetivo de possibilitar o agendamento de tarefas."
+          description="Aplicativo PWA de agendamento de tarefas."
+        />
+        <Work
+          key={crypto.randomUUID()}
+          img="/assets/projects/schedule.png"
+          tags={["React", "Nextjs", "Firebase"]}
+          title="Schedule App"
+          description="Aplicativo PWA de agendamento de tarefas."
+        />
+        <Work
+          key={crypto.randomUUID()}
+          img="/assets/projects/schedule.png"
+          tags={["React", "Nextjs", "Firebase"]}
+          title="Schedule App"
+          description="Aplicativo PWA de agendamento de tarefas."
+        />
+        <Work
+          key={crypto.randomUUID()}
+          img="/assets/projects/schedule.png"
+          tags={["React", "Nextjs", "Firebase"]}
+          title="Schedule App"
+          description="Aplicativo PWA de agendamento de tarefas."
+        />
+        <Work
+          key={crypto.randomUUID()}
+          img="/assets/projects/schedule.png"
+          tags={["React", "Nextjs", "Firebase"]}
+          title="Schedule App"
+          description="Aplicativo PWA de agendamento de tarefas."
         />
       </div>
       <ChevronRight
