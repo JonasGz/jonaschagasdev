@@ -5,6 +5,21 @@
   gap: 4rem;
   padding: 0 2rem;
 
+  &__picture img {
+    width: 17.8rem;
+    height: 17.8rem;
+  }
+
+  &__title {
+    display: none;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
   &__description {
     font-size: 1.2rem;
     color: #b8b8b8;
@@ -14,11 +29,41 @@
   }
 
   &__button {
-    background-color: #743BC8;
+    background-color: #743bc8;
     color: #fff;
     font-size: 1.1rem;
     font-weight: 400;
     border-radius: 0.3rem;
     padding: 1rem 4rem;
+    width: max-content;
+    align-self: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .about {
+    flex-direction: row;
+
+    &__title {
+      color: #fff;
+      font-weight: 600;
+      margin: 0;
+      display: block;
+    }
+
+    &__picture img {
+      width: 24.8rem;
+      height: 24.8rem;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+    }
+
+    &__button {
+      align-self: flex-start;
+    }
   }
 }

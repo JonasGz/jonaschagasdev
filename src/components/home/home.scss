@@ -1,9 +1,9 @@
 .home {
   display: flex;
-  width: 100%;
   color: #dfdfdf;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 2rem;
 
   &__content {
     display: flex;
@@ -17,7 +17,7 @@
   }
 
   &__name {
-    color: #743BC8;
+    color: #743bc8;
     margin: 0;
   }
 
@@ -26,14 +26,13 @@
   }
 
   &__rocket {
-
     & img {
       width: 22rem;
     }
   }
 
   &__button {
-    background-color: #743BC8;
+    background-color: #743bc8;
     color: #fff;
     font-size: 1.1rem;
     font-weight: 400;

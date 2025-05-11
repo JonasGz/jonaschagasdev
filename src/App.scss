@@ -5,15 +5,17 @@
 
   &__section {
     width: 100%;
+    max-width: 80rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
-  
+
   &__section-title {
     background-color: #000;
     color: #fff;
-    border: 0.2rem solid #743BC8;
+    border: 0.2rem solid #743bc8;
     font-size: 1.6rem;
     width: max-content;
     justify-self: center;
@@ -22,16 +24,27 @@
     margin: 0 0 4rem 0;
   }
 
+  &__home {
+    display: none;
+  }
+
   &__about {
     margin-top: 11.2rem;
   }
-  
 }
 
-@media (min-width: 728px) {
+@media (min-width: 768px) {
   .app {
+    width: 100%;
+    align-items: center;
+
     &__about {
       margin-top: 0;
+    }
+
+    &__home {
+      display: block;
+      margin: 12rem 0 4rem 0;
     }
   }
 }

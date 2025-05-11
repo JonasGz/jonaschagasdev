@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <section id="home" className="app__section">
+      <section id="home" className="app__section app__home">
         <Home />
       </section>
       <section id="about" className="app__section app__about">

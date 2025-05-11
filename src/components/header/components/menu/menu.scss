@@ -7,14 +7,18 @@
   &__content {
     width: 0%;
     height: 100vh;
-    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0) 100%
+    );
     position: absolute;
     top: 0;
     left: 0;
     transition: width 0.3s ease-in-out;
     color: white;
     z-index: 1;
-    
+
     & ul {
       position: relative;
       top: 8rem;
@@ -32,7 +36,6 @@
       border-bottom: 0.1rem solid #222;
       max-width: 16rem;
     }
-    
 
     &--open {
       width: 80%;
@@ -40,7 +43,7 @@
   }
 }
 
-@media(min-width: 728px) {
+@media (min-width: 768px) {
   .menu {
     display: none;
   }
