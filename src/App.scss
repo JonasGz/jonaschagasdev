@@ -10,17 +10,24 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    scroll-margin-top: 7rem;
   }
 
   &__section-title {
     background-color: #000;
     color: #fff;
     border: 0.2rem solid #743bc8;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     width: max-content;
     justify-self: center;
-    padding: 1.2rem 4rem;
-    border-radius: 1rem;
+    padding: 1rem 3rem;
+    border-radius: 0.8rem;
+    margin: 0 0 2rem 0;
+  }
+
+  &__section-subtitle {
+    color: #fff;
+    font-weight: 500;
     margin: 0 0 4rem 0;
   }
 

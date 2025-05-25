@@ -1,7 +1,38 @@
 .tech {
-    display: flex;
-    background-color: #1C1C1C;
-    padding: 1.4rem;
-    border-radius: 1rem;
-    border-bottom: 0.3rem solid #743BC8;
+  display: flex;
+  background-color: #1c1c1c;
+  padding: 1.4rem;
+  border-radius: 1rem;
+  border-bottom: 0.3rem solid #743bc8;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+  flex: 1 1 0;
+  max-width: 6rem;
+
+  &__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  &__title {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .tech {
+    padding: 2rem;
+
+    &__icon {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    &__title {
+      display: block;
+      color: #fff;
+      font-size: 1rem;
+    }
+  }
 }

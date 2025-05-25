@@ -1,12 +1,16 @@
 .contact {
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-    font-size: 1.4rem;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 1.2rem;
+  align-items: center;
+  gap: 1rem;
 
-    & img {
-        width: 6rem;
-    }
+  & img {
+    width: 4.4rem;
+  }
+
+  &__title {
+    font-weight: 500;
+  }
 }

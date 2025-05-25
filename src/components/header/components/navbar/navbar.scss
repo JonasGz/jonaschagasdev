@@ -12,6 +12,8 @@
   &__item {
     background: transparent;
     padding: 0.1rem;
+    text-decoration: none;
+    color: #fff;
 
     & > &__container {
       background: transparent;
@@ -23,6 +25,8 @@
     background: linear-gradient(90deg, #964cf0, #170033);
     padding: 0.1rem;
     border-radius: 2rem;
+    text-decoration: none;
+    color: #fff;
 
     & > &__container {
       background: #000;

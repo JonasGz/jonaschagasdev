@@ -8,6 +8,7 @@ export const Works = () => {
 
   return (
     <div className="works">
+      <div className="works__bg"></div>
       <ChevronLeft
         size={28}
         onClick={handlePrev}

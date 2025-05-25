@@ -20,18 +20,24 @@ function App() {
       </section>
       <section id="works" className="app__section">
         <div className="app__section-title">Trabalhos</div>
+        <h2 className="app__section-subtitle">Meus projetos</h2>
         <Works />
       </section>
       <section id="technologies" className="app__section">
         <div className="app__section-title">Tecnologias</div>
+        <h2 className="app__section-subtitle">Habilidades</h2>
         <Technologies />
       </section>
       <section id="experiences" className="app__section">
-        <div className="app__section-title">Experiências</div>
+        <div className="app__section-title">Trabalhos</div>
+        <h2 className="app__section-subtitle">Experiências</h2>
+
         <Experiences />
       </section>
       <section id="contacts" className="app__section">
         <div className="app__section-title">Contato</div>
+        <h2 className="app__section-subtitle">Fale comigo</h2>
+
         <Contacts />
       </section>
       <Footer />

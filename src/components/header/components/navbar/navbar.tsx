@@ -1,24 +1,100 @@
 import "./navbar.scss";
+import { useEffect, useState } from "react";
 
 export const Navbar = () => {
+  const [activeSection, setActiveSection] = useState(window.location.hash);
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash || "#home";
+      setActiveSection(hash);
+      if (hash) {
+        window.scrollTo({
+          top: 0,
+        });
+      }
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
+  }, []);
+
+  const isActive = (hash: string) => {
+    return activeSection === hash;
+  };
+
   return (
     <nav className="navbar">
       <ul className="navbar__content">
-        <li className="navbar__item--active">
-          <div className="navbar__item--active__container">Início</div>
-        </li>
-        <li className="navbar__item">
-          <div className="navbar__item__container">Sobre mim</div>
-        </li>
-        <li className="navbar__item">
-          <div className="navbar__item__container">Projetos</div>
-        </li>
-        <li className="navbar__item">
-          <div className="navbar__item__container">Habilidades</div>
-        </li>
-        <li className="navbar__item">
-          <div className="navbar__item__container">Contato</div>
-        </li>
+        <a
+          href="#home"
+          className={`navbar__item ${
+            isActive("#home") ? "navbar__item--active" : ""
+          }`}
+        >
+          <div
+            className={`navbar__item__container ${
+              isActive("#home") ? "navbar__item--active__container" : ""
+            }`}
+          >
+            Início
+          </div>
+        </a>
+        <a
+          href="#about"
+          className={`navbar__item ${
+            isActive("#about") ? "navbar__item--active" : ""
+          }`}
+        >
+          <div
+            className={`navbar__item__container ${
+              isActive("#about") ? "navbar__item--active__container" : ""
+            }`}
+          >
+            Sobre mim
+          </div>
+        </a>
+        <a
+          href="#works"
+          className={`navbar__item ${
+            isActive("#works") ? "navbar__item--active" : ""
+          }`}
+        >
+          <div
+            className={`navbar__item__container ${
+              isActive("#works") ? "navbar__item--active__container" : ""
+            }`}
+          >
+            Projetos
+          </div>
+        </a>
+        <a
+          href="#technologies"
+          className={`navbar__item ${
+            isActive("#technologies") ? "navbar__item--active" : ""
+          }`}
+        >
+          <div
+            className={`navbar__item__container ${
+              isActive("#technologies") ? "navbar__item--active__container" : ""
+            }`}
+          >
+            Habilidades
+          </div>
+        </a>
+        <a
+          href="#contacts"
+          className={`navbar__item ${
+            isActive("#contacts") ? "navbar__item--active" : ""
+          }`}
+        >
+          <div
+            className={`navbar__item__container ${
+              isActive("#contacts") ? "navbar__item--active__container" : ""
+            }`}
+          >
+            Contato
+          </div>
+        </a>
       </ul>
     </nav>
   );
