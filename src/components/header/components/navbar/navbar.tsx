@@ -2,7 +2,9 @@ import "./navbar.scss";
 import { useEffect, useState } from "react";
 
 export const Navbar = () => {
-  const [activeSection, setActiveSection] = useState(window.location.hash);
+  const [activeSection, setActiveSection] = useState(
+    window.location.hash || "#home"
+  );
 
   const isActive = (hash: string) => {
     return activeSection === hash;

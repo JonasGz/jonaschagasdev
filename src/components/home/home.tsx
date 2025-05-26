@@ -1,12 +1,34 @@
+import { TypeAnimation } from "react-type-animation";
 import "./home.scss";
 
 export const Home = () => {
   return (
     <div className="home">
       <div className="home__content">
-        <span className="home__hello">Olá, eu sou</span>
-        <h1 className="home__name">Jonas Chagas</h1>
-        <span className="home__category">Engenheiro de Software</span>
+        <TypeAnimation
+          sequence={["Olá, eu sou", 1000]}
+          wrapper="span"
+          className="home__hello"
+          cursor={false}
+          speed={10}
+          repeat={0}
+        />
+        <TypeAnimation
+          sequence={[1000, "Jonas Chagas", 1000]}
+          wrapper="h1"
+          className="home__name"
+          cursor={false}
+          speed={10}
+          repeat={0}
+        />
+        <TypeAnimation
+          sequence={[2000, "Engenheiro de Software"]}
+          wrapper="span"
+          className="home__category"
+          cursor={false}
+          speed={10}
+          repeat={0}
+        />
         <a className="home__button">Acessar meu Linkedin</a>
       </div>
       <div className="home__rocket">

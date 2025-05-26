@@ -3,9 +3,10 @@ import "./work.scss";
 
 type WorkProps = {
   img: string;
-  tags: string[];
+  tags?: string[];
   title: string;
   description: string;
+  url?: string;
 };
 
 export const Work = (props: WorkProps) => {
@@ -16,7 +17,7 @@ export const Work = (props: WorkProps) => {
           <img src={props.img} alt={props.title} title={props.title} />
         </div>
         <div className="work__tags">
-          {props.tags.map((tag) => (
+          {props.tags?.map((tag) => (
             <Tag key={crypto.randomUUID()} name={tag} />
           ))}
         </div>
@@ -25,13 +26,11 @@ export const Work = (props: WorkProps) => {
           <p className="work__description">{props.description}</p>
         </div>
 
-        <a
-          href="https://petdex.vercel.app/"
-          target="_blank"
-          className="work__container-button"
-        >
-          <button className="work__button">Acessar</button>
-        </a>
+        <div className="work__container-button">
+          <a href={props.url} target="_blank" className="work__button">
+            Acessar
+          </a>
+        </div>
       </div>
     </div>
   );

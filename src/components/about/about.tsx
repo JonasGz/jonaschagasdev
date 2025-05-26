@@ -4,7 +4,7 @@ export const About = () => {
   return (
     <div className="about">
       <div className="about__picture">
-        <img title="picture" alt="picture" src="/assets/picture.svg" />
+        <img title="picture" alt="picture" src="/assets/avatar.png" />
       </div>
       <div className="about__content">
         <h2 className="about__title">Sobre mim</h2>

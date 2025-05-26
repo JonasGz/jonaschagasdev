@@ -22,6 +22,8 @@ export const Technologies = () => {
         <Tech url="/assets/icons/reactIcon.svg" name="React" />
         <Tech url="/assets/icons/nextjsIcon.svg" name="Nextjs" />
         <Tech url="/assets/icons/flutterIcon.svg" name="Flutter" />
+        <Tech url="/assets/icons/kotlinIcon.svg" name="Kotlin" />
+        <Tech url="/assets/icons/gitIcon.svg" name="Git" />
       </div>
       <ChevronRight
         size={28}

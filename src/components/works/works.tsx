@@ -22,41 +22,45 @@ export const Works = () => {
           tags={["JavaScript", "HTML", "SCSS", "Firebase"]}
           title="PetDex"
           description="Aplicativo que transforma a experiência de ser tutor de pets."
+          url="https://petdex.vercel.app"
         />
         <Work
           key={crypto.randomUUID()}
           img="/assets/projects/schedule.png"
-          tags={["React", "Nextjs", "Firebase"]}
+          tags={["React", "Nextjs", "PWA", "Firebase"]}
           title="Schedule App"
           description="Aplicativo PWA de agendamento de tarefas."
+          url="https://schedulepwa.vercel.app"
         />
         <Work
           key={crypto.randomUUID()}
-          img="/assets/projects/schedule.png"
-          tags={["React", "Nextjs", "Firebase"]}
-          title="Schedule App"
-          description="Aplicativo PWA de agendamento de tarefas."
+          img="/assets/projects/map-marker.png"
+          tags={["React Native", "RN Maps", "Firebase", "Expo"]}
+          title="Map Marker"
+          description="Aplicativo para marcações de localizações em mapa."
+          url="https://github.com/JonasGz/map-marker-react-native"
         />
         <Work
           key={crypto.randomUUID()}
-          img="/assets/projects/schedule.png"
-          tags={["React", "Nextjs", "Firebase"]}
-          title="Schedule App"
-          description="Aplicativo PWA de agendamento de tarefas."
+          img="/assets/projects/fuel.png"
+          tags={["Flutter", "Dart", "Firebase"]}
+          title="Abast Control"
+          description="Aplicativo para controle de abastecimentos de combustíveis."
+          url="https://github.com/JonasGz/abast_control"
         />
         <Work
           key={crypto.randomUUID()}
-          img="/assets/projects/schedule.png"
-          tags={["React", "Nextjs", "Firebase"]}
-          title="Schedule App"
-          description="Aplicativo PWA de agendamento de tarefas."
+          img="/assets/projects/foodcontrol.png"
+          tags={["Flutter", "Dart", "Firebase"]}
+          title="Food Control"
+          description="Aplicativo para controle financeiro de alimentação."
+          url="https://github.com/JonasGz/food-finance-control"
         />
         <Work
           key={crypto.randomUUID()}
-          img="/assets/projects/schedule.png"
-          tags={["React", "Nextjs", "Firebase"]}
-          title="Schedule App"
-          description="Aplicativo PWA de agendamento de tarefas."
+          img="/assets/projects/loading.png"
+          title="Em breve"
+          description="..."
         />
       </div>
       <ChevronRight
