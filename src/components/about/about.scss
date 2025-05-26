@@ -37,6 +37,7 @@
     padding: 1rem 4rem;
     width: max-content;
     align-self: center;
+    text-decoration: none;
   }
 }
 
@@ -64,6 +65,11 @@
 
     &__button {
       align-self: flex-start;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
   }
 }

@@ -1,3 +1,4 @@
+import { Tag } from "../../../tag/tag";
 import "./work.scss";
 
 type WorkProps = {
@@ -16,9 +17,7 @@ export const Work = (props: WorkProps) => {
         </div>
         <div className="work__tags">
           {props.tags.map((tag) => (
-            <div key={crypto.randomUUID()} className="work__container-tag">
-              <div className="work__tag">{tag}</div>
-            </div>
+            <Tag key={crypto.randomUUID()} name={tag} />
           ))}
         </div>
         <div className="work__header">

@@ -3,11 +3,16 @@ import { useEffect, useState } from "react";
 
 export const Navbar = () => {
   const [activeSection, setActiveSection] = useState(window.location.hash);
+
+  const isActive = (hash: string) => {
+    return activeSection === hash;
+  };
+
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash || "#home";
       setActiveSection(hash);
-      if (hash) {
+      if (hash === "#home") {
         window.scrollTo({
           top: 0,
         });
@@ -17,10 +22,6 @@ export const Navbar = () => {
     window.addEventListener("hashchange", handleHashChange);
     return () => window.removeEventListener("hashchange", handleHashChange);
   }, []);
-
-  const isActive = (hash: string) => {
-    return activeSection === hash;
-  };
 
   return (
     <nav className="navbar">
@@ -79,6 +80,20 @@ export const Navbar = () => {
             }`}
           >
             Habilidades
+          </div>
+        </a>
+        <a
+          href="#experiences"
+          className={`navbar__item ${
+            isActive("#experiences") ? "navbar__item--active" : ""
+          }`}
+        >
+          <div
+            className={`navbar__item__container ${
+              isActive("#experiences") ? "navbar__item--active__container" : ""
+            }`}
+          >
+            Experiências
           </div>
         </a>
         <a

@@ -6,6 +6,12 @@
   width: 100%;
   min-width: 26rem;
   color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
 
   & > &__container {
     background: #000;
@@ -35,20 +41,6 @@
     display: flex;
     gap: 1rem;
     margin: 2rem 0 0 0;
-  }
-
-  &__container-tag {
-    background: linear-gradient(0deg, #170033, #964cf0);
-    padding: 0.2rem;
-    border-radius: 0.4rem;
-    width: max-content;
-
-    & > .work__tag {
-      background: #000;
-      border-radius: 0.2rem;
-      padding: 0.4rem;
-      font-size: 1rem;
-    }
   }
 
   &__description {

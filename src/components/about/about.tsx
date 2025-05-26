@@ -17,7 +17,9 @@ export const About = () => {
           contribuir com projetos desafiadores e de alto impacto na área de
           tecnologia, consolidando minha carreira como Engenheiro de Software.
         </div>
-        <div className="about__button">Baixar currículo</div>
+        <a href="/assets/jonaschagascv.pdf" download className="about__button">
+          Baixar currículo
+        </a>
       </div>
     </div>
   );

@@ -1,0 +1,13 @@
+.tag {
+  background: linear-gradient(0deg, #2a005d, #964cf0);
+  padding: 0.1rem;
+  border-radius: 0.4rem;
+  width: max-content;
+
+  & > &__item {
+    background: #000;
+    border-radius: 0.4rem;
+    padding: 0.4rem 0.6rem;
+    font-size: 1rem;
+  }
+}

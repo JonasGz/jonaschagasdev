@@ -1,13 +1,12 @@
 .experiences {
+  display: flex;
+  align-items: center;
+
+  &__items {
     display: flex;
-    align-items: center;
-    
-    &__items {
-      display: flex;
-      padding: 0 2rem;
-      overflow: hidden;
-      gap: 2rem;
-      flex-direction: column;
-    }
-  
+    padding: 0 2rem;
+    overflow: hidden;
+    gap: 2rem;
+    flex-direction: column;
   }
+}

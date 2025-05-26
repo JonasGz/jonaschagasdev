@@ -6,6 +6,11 @@
   width: 100%;
   min-width: 28rem;
   color: #ffffff;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
 
   & > &__container {
     background: #000;
@@ -42,5 +47,10 @@
   &__description {
     font-size: 1.2rem;
     color: #d3d3d3;
+  }
+
+  &__tags {
+    display: flex;
+    gap: 1rem;
   }
 }

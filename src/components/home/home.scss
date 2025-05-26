@@ -40,5 +40,10 @@
     padding: 1rem 4rem;
     width: max-content;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
