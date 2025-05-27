@@ -29,7 +29,9 @@ export const Home = () => {
           speed={10}
           repeat={0}
         />
-        <a className="home__button">Acessar meu Linkedin</a>
+        <a href="https://linkedin.com/in/jonas-chagas" className="home__button">
+          Acessar meu Linkedin
+        </a>
       </div>
       <div className="home__rocket">
         <img src="/assets/rocket.svg" alt="rocket" title="rocket" />
