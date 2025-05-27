@@ -29,7 +29,11 @@ export const Home = () => {
           speed={10}
           repeat={0}
         />
-        <a href="https://linkedin.com/in/jonas-chagas" className="home__button">
+        <a
+          href="https://linkedin.com/in/jonas-chagas"
+          target="_blank"
+          className="home__button"
+        >
           Acessar meu Linkedin
         </a>
       </div>
