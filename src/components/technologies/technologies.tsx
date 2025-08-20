@@ -4,7 +4,10 @@ import "./technologies.scss";
 import { useScroll } from "../../hooks/use-scroll";
 
 export const Technologies = () => {
-  const { containerRef, handleNext, handlePrev } = useScroll();
+  const { containerRef, handleNext, handlePrev } = useScroll({
+    itemsPerView: 4,
+    gap: 10,
+  });
 
   return (
     <div className="technologies">

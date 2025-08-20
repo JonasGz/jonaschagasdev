@@ -4,7 +4,9 @@ import { useScroll } from "../../hooks/use-scroll";
 import "./works.scss";
 
 export const Works = () => {
-  const { containerRef, handleNext, handlePrev } = useScroll();
+  const { containerRef, handleNext, handlePrev } = useScroll({
+    itemsPerView: 1,
+  });
 
   return (
     <div className="works">
