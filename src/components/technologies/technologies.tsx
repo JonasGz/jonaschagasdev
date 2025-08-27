@@ -21,10 +21,12 @@ export const Technologies = () => {
       />
       <div ref={containerRef} className="technologies__items">
         <Tech url="/assets/icons/jsIcon.svg" name="JavaScript" />
+        <Tech url="/assets/icons/dartIcon.svg" name="Dart" />
         <Tech url="/assets/icons/tsIcon.svg" name="TypeScript" />
         <Tech url="/assets/icons/reactIcon.svg" name="React" />
         <Tech url="/assets/icons/nextjsIcon.svg" name="Nextjs" />
         <Tech url="/assets/icons/flutterIcon.svg" name="Flutter" />
+        <Tech url="/assets/icons/reactIcon.svg" name="React Native" />
         <Tech url="/assets/icons/kotlinIcon.svg" name="Kotlin" />
         <Tech url="/assets/icons/gitIcon.svg" name="Git" />
       </div>

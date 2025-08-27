@@ -10,12 +10,12 @@ export const About = () => {
         <h2 className="about__title">Sobre mim</h2>
         <div className="about__description">
           Formado em Análise e Desenvolvimento de Sistemas e pós-graduado em
-          Desenvolvimento Mobile, combino minha experiência em liderança,
-          disciplina, gestão de equipes e projetos adquiridas como Oficial do
-          Exército com habilidades técnicas para desenvolver soluções de
-          software eficientes e inovadoras. Comprometido com a excelência, busco
-          contribuir com projetos desafiadores e de alto impacto na área de
-          tecnologia, consolidando minha carreira como Engenheiro de Software.
+          Desenvolvimento Mobile, trago disciplina, organização e capacidade de
+          aprendizado rápido, habilidades desenvolvidas como Oficial do
+          Exército, aplicadas agora no desenvolvimento de software. Busco
+          oportunidades para crescer como Engenheiro de Software e contribuir
+          com projetos desafiadores na área de tecnologia, com foco no
+          desenvolvimento web e mobile.
         </div>
         {/* <a href="/assets/jonaschagascv.pdf" download className="about__button">
           Baixar currículo

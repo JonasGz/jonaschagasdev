@@ -56,13 +56,13 @@ export const Experiences = () => {
           period="FEV/19 - JUN/25"
           description="As atividades desempenhadas foram de gestão de equipes, treinamento de pessoas, gestão operacional e administrativa de organização militar, coordenação de projetos de Tecnologia da Informação e gestão do sistema ERP Educacional da Escola de Saúde do Exército."
           tags={[
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "React",
-            "Git",
-            "Scrum",
-            "Kanban",
+            "Disciplina",
+            "Comunicação",
+            "Gestão de Equipes",
+            // "React",
+            // "Git",
+            // "Scrum",
+            // "Kanban",
           ]}
         />
       </div>
