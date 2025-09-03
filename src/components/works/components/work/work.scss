@@ -23,12 +23,19 @@
     justify-content: center;
     width: 100%;
     align-items: center;
-    padding: 1rem 0;
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 90%;
 
     & img {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      height: auto;
-      object-fit: contain;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
       border-radius: 2rem;
     }
   }
@@ -74,12 +81,6 @@
 @media (min-width: 768px) {
   .work {
     max-width: 28rem;
-
-    &__img {
-      & img {
-        width: 14rem;
-      }
-    }
 
     &__title {
       margin: 1rem 0 0 0;
