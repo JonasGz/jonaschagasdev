@@ -4,7 +4,6 @@
   padding: 0.2rem;
   border-radius: 1rem;
   width: 100%;
-  min-width: 26rem;
   color: #ffffff;
 
   & > &__container {
@@ -80,8 +79,6 @@
 
 @media (min-width: 768px) {
   .work {
-    max-width: 28rem;
-
     &__title {
       margin: 1rem 0 0 0;
     }

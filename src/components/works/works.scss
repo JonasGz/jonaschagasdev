@@ -3,6 +3,9 @@
   align-items: center;
   gap: 0.6rem;
   position: relative;
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
 
   &__bg {
     position: absolute;
@@ -22,26 +25,32 @@
     border-radius: 1rem;
     display: flex;
     cursor: pointer;
+    flex-shrink: 0;
+    z-index: 2;
+
+    &.swiper-button-disabled {
+      opacity: 0.4;
+      cursor: default;
+    }
   }
 
   &__items {
-    display: flex;
-    width: 26.4rem;
-    overflow: hidden;
+    width: 100%;
+    min-width: 0;
+    padding-bottom: 3rem;
   }
-}
 
-@media (min-width: 768px) {
-  .works {
-    &__btn {
-      display: none;
-    }
+  &__slide {
+    height: auto;
+    display: flex;
+  }
 
-    &__items {
-      width: 100%;
-      gap: 2rem;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+  .swiper-pagination-bullet {
+    background-color: #743bc8;
+    opacity: 0.5;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
   }
 }

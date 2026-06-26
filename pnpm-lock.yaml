@@ -17,6 +17,9 @@ dependencies:
   react-type-animation:
     specifier: ^3.2.0
     version: 3.2.0(prop-types@15.8.1)(react-dom@19.1.0)(react@19.1.0)
+  swiper:
+    specifier: ^12.2.0
+    version: 12.2.0
 
 devDependencies:
   '@eslint/js':
@@ -2314,6 +2317,11 @@ packages:
     dependencies:
       has-flag: 4.0.0
     dev: true
+
+  /swiper@12.2.0:
+    resolution: {integrity: sha512-K8uXsBZU6ME97Ia3xbBge8IRCnR1lOmIILzvY/jGVic7dSTQ530s3uO8RvXbPUtkkXLWIwmZLRPbtDxRWVAFdg==}
+    engines: {node: '>= 4.7.0'}
+    dev: false
 
   /sync-child-process@1.0.2:
     resolution: {integrity: sha512-8lD+t2KrrScJ/7KXCSyfhT3/hRq78rC0wBFqNJXv3mZyn6hW2ypM05JmlSvtqRbeq6jqA94oHbxAr2vYsJ8vDA==}

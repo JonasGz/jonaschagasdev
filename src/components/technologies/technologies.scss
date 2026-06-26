@@ -25,27 +25,31 @@
     border-radius: 1rem;
     display: flex;
     cursor: pointer;
+    flex-shrink: 0;
+    z-index: 2;
+
+    &.swiper-button-disabled {
+      opacity: 0.4;
+      cursor: default;
+    }
   }
 
   &__items {
+    width: 100%;
+    min-width: 0;
+  }
+
+  &__slide {
     display: flex;
-    gap: 1rem;
-    width: 24.8rem;
-    overflow: hidden;
+    justify-content: center;
+    height: auto;
   }
 }
 
 @media (min-width: 768px) {
   .technologies {
-    &__btn {
-      display: none;
-    }
-
-    &__items {
-      width: 100%;
-      gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: center;
+    &__slide {
+      width: auto;
     }
   }
 }
