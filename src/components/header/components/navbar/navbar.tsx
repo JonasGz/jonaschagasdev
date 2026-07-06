@@ -1,7 +1,9 @@
 import "./navbar.scss";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export const Navbar = () => {
+  const { t } = useTranslation();
   const [activeSection, setActiveSection] = useState(
     window.location.hash || "#home"
   );
@@ -39,7 +41,7 @@ export const Navbar = () => {
               isActive("#home") ? "navbar__item--active__container" : ""
             }`}
           >
-            Início
+            {t("nav.home")}
           </div>
         </a>
         <a
@@ -53,7 +55,7 @@ export const Navbar = () => {
               isActive("#about") ? "navbar__item--active__container" : ""
             }`}
           >
-            Sobre mim
+            {t("nav.about")}
           </div>
         </a>
         <a
@@ -67,7 +69,7 @@ export const Navbar = () => {
               isActive("#works") ? "navbar__item--active__container" : ""
             }`}
           >
-            Projetos
+            {t("nav.works")}
           </div>
         </a>
         <a
@@ -81,7 +83,7 @@ export const Navbar = () => {
               isActive("#technologies") ? "navbar__item--active__container" : ""
             }`}
           >
-            Habilidades
+            {t("nav.technologies")}
           </div>
         </a>
         <a
@@ -95,7 +97,7 @@ export const Navbar = () => {
               isActive("#experiences") ? "navbar__item--active__container" : ""
             }`}
           >
-            Experiências
+            {t("nav.experiences")}
           </div>
         </a>
         <a
@@ -109,7 +111,7 @@ export const Navbar = () => {
               isActive("#contacts") ? "navbar__item--active__container" : ""
             }`}
           >
-            Contato
+            {t("nav.contacts")}
           </div>
         </a>
       </ul>

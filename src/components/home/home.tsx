@@ -1,12 +1,16 @@
 import { TypeAnimation } from "react-type-animation";
+import { useTranslation } from "react-i18next";
 import "./home.scss";
 
 export const Home = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <div className="home">
       <div className="home__content">
         <TypeAnimation
-          sequence={["Olá, eu sou", 1000]}
+          key={`hello-${i18n.language}`}
+          sequence={[t("home.hello"), 1000]}
           wrapper="span"
           className="home__hello"
           cursor={false}
@@ -22,7 +26,8 @@ export const Home = () => {
           repeat={0}
         />
         <TypeAnimation
-          sequence={[2000, "Engenheiro de Software"]}
+          key={`category-${i18n.language}`}
+          sequence={[2000, t("home.category")]}
           wrapper="span"
           className="home__category"
           cursor={false}
@@ -34,7 +39,7 @@ export const Home = () => {
           target="_blank"
           className="home__button"
         >
-          Acessar meu Linkedin
+          {t("home.linkedinButton")}
         </a>
       </div>
       <div className="home__rocket">

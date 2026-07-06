@@ -1,0 +1,91 @@
+.lp {
+  display: flex;
+  background: linear-gradient(0deg, #170033, #964cf0);
+  padding: 0.2rem;
+  border-radius: 1rem;
+  width: 100%;
+  color: #ffffff;
+
+  & > &__container {
+    background: #000;
+    border-radius: 0.9rem;
+    padding: 1.4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    background-color: #743bc8;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 62.5%;
+
+    & img {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 0.8rem;
+    }
+  }
+
+  &__tags {
+    display: flex;
+    gap: 0.4rem;
+    margin: 2rem 0 0 0;
+    flex-wrap: wrap;
+  }
+
+  &__description {
+    font-size: 1.2rem;
+  }
+
+  &__container-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: auto;
+    padding: 1rem 0;
+  }
+
+  &__button {
+    all: unset;
+    background-color: #743bc8;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 400;
+    border-radius: 0.3rem;
+    padding: 1rem 2rem;
+    width: max-content;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .lp {
+    &__title {
+      margin: 1rem 0 0 0;
+    }
+
+    &__container-button {
+      text-align: center;
+      display: block;
+    }
+  }
+}

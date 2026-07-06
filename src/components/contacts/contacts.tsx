@@ -1,17 +1,20 @@
+import { useTranslation } from "react-i18next";
 import { Contact } from "./components/contact";
 import "./contacts.scss";
 
 export const Contacts = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="contacts">
       <Contact
-        title="Nome"
+        title={t("contacts.nameLabel")}
         url="/assets/contacts/name.svg"
         name="E-mail"
         description="Jonas Chagas"
       />
       <Contact
-        title="E-mail"
+        title={t("contacts.emailLabel")}
         url="/assets/contacts/email.svg"
         name="E-mail"
         description="jonaschagasweb@gmail.com"

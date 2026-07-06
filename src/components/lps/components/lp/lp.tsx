@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
 import { Tag } from "../../../tag/tag";
-import "./work.scss";
+import "./lp.scss";
 
-type WorkProps = {
+type LpProps = {
   img: string;
   tags?: string[];
   title: string;
@@ -10,27 +10,27 @@ type WorkProps = {
   url?: string;
 };
 
-export const Work = (props: WorkProps) => {
+export const Lp = (props: LpProps) => {
   const { t } = useTranslation();
 
   return (
-    <div className="work">
-      <div className="work__container">
-        <div className="work__img">
+    <div className="lp">
+      <div className="lp__container">
+        <div className="lp__img">
           <img src={props.img} alt={props.title} title={props.title} />
         </div>
-        <div className="work__tags">
+        <div className="lp__tags">
           {props.tags?.map((tag) => (
             <Tag key={crypto.randomUUID()} name={tag} />
           ))}
         </div>
-        <div className="work__header">
-          <h4 className="work__title">{props.title}</h4>
-          <p className="work__description">{props.description}</p>
+        <div className="lp__header">
+          <h4 className="lp__title">{props.title}</h4>
+          <p className="lp__description">{props.description}</p>
         </div>
 
-        <div className="work__container-button">
-          <a href={props.url} target="_blank" className="work__button">
+        <div className="lp__container-button">
+          <a href={props.url} target="_blank" className="lp__button">
             {t("common.access")}
           </a>
         </div>

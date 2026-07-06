@@ -2,6 +2,7 @@ import "./header.scss";
 import { Menu } from "./components/menu/menu";
 import { Logo } from "./components/logo/logo";
 import { Navbar } from "./components/navbar/navbar";
+import { LanguageSwitcher } from "../language-switcher/language-switcher";
 import { useEffect, useRef } from "react";
 
 export const Header = () => {
@@ -30,6 +31,9 @@ export const Header = () => {
       <Menu />
       <div className="header__logo">
         <Logo />
+      </div>
+      <div className="header__lang">
+        <LanguageSwitcher />
       </div>
     </div>
   );

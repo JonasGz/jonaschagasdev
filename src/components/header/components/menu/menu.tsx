@@ -8,10 +8,13 @@ import {
   UserRound,
   X,
 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { useMenu } from "../../../../hooks/use-menu";
+import { LanguageSwitcher } from "../../../language-switcher/language-switcher";
 
 export const Menu = () => {
   const { showMenu, handleMenu, handleLinkClick } = useMenu();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -23,25 +26,26 @@ export const Menu = () => {
         )}
       </div>
       <div className={`menu__content ${showMenu ? "menu__content--open" : ""}`}>
-        {showMenu && (
-          <ul>
-            <li onClick={() => handleLinkClick("about")}>
-              <UserRound size={16} /> Sobre
-            </li>
-            <li onClick={() => handleLinkClick("works")}>
-              <FolderGit size={16} /> Projetos
-            </li>
-            <li onClick={() => handleLinkClick("technologies")}>
-              <Library size={16} /> Tecnologias
-            </li>
-            <li onClick={() => handleLinkClick("experiences")}>
-              <BriefcaseBusiness size={16} /> Experiências
-            </li>
-            <li onClick={() => handleLinkClick("contacts")}>
-              <Headset size={16} /> Contato
-            </li>
-          </ul>
-        )}
+        <ul>
+          <li onClick={() => handleLinkClick("about")}>
+            <UserRound size={16} /> {t("nav.about")}
+          </li>
+          <li onClick={() => handleLinkClick("works")}>
+            <FolderGit size={16} /> {t("nav.works")}
+          </li>
+          <li onClick={() => handleLinkClick("technologies")}>
+            <Library size={16} /> {t("nav.technologies")}
+          </li>
+          <li onClick={() => handleLinkClick("experiences")}>
+            <BriefcaseBusiness size={16} /> {t("nav.experiences")}
+          </li>
+          <li onClick={() => handleLinkClick("contacts")}>
+            <Headset size={16} /> {t("nav.contacts")}
+          </li>
+        </ul>
+        <div className="menu__lang">
+          <LanguageSwitcher inline />
+        </div>
       </div>
     </>
   );

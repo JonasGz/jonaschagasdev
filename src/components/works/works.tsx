@@ -1,6 +1,7 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
+import { useTranslation } from "react-i18next";
 import { Work } from "./components/work/work";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -9,50 +10,52 @@ import "./works.scss";
 
 const works = [
   {
+    id: "cineflutter",
     img: "/assets/projects/cineflutter.png",
     tags: ["Flutter", "Dart", "Firebase", "Dio", "Riverpod", "Clean Architecture"],
     title: "Cine Flutter",
-    description: "Aplicativo de visualização de filmes por categorias e gêneros.",
     url: "https://github.com/JonasGz/cine-flutter",
   },
   {
+    id: "petdex",
     img: "/assets/projects/petdex.png",
     tags: ["JavaScript", "HTML", "SCSS", "Firebase"],
     title: "PetDex",
-    description: "Aplicativo que transforma a experiência de ser tutor de pets.",
     url: "https://petdex.vercel.app",
   },
   {
+    id: "schedule",
     img: "/assets/projects/schedule.png",
     tags: ["React", "Nextjs", "PWA", "Firebase"],
     title: "Schedule App",
-    description: "Aplicativo PWA de agendamento de tarefas.",
     url: "https://schedulepwa.vercel.app",
   },
   {
+    id: "mapmarker",
     img: "/assets/projects/map-marker.png",
     tags: ["React Native", "RN Maps", "Firebase", "Expo"],
     title: "Map Marker",
-    description: "Aplicativo para marcações de localizações em mapa.",
     url: "https://github.com/JonasGz/map-marker-react-native",
   },
   {
+    id: "abastcontrol",
     img: "/assets/projects/fuel.png",
     tags: ["Flutter", "Dart", "Firebase"],
     title: "Abast Control",
-    description: "Aplicativo para controle de abastecimentos de combustíveis.",
     url: "https://github.com/JonasGz/abast_control",
   },
   {
+    id: "foodcontrol",
     img: "/assets/projects/foodcontrol.png",
     tags: ["Flutter", "Dart", "Firebase"],
     title: "Food Control",
-    description: "Aplicativo para controle financeiro de alimentação.",
     url: "https://github.com/JonasGz/food-finance-control",
   },
 ];
 
 export const Works = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="works">
       <div className="works__bg"></div>
@@ -89,7 +92,7 @@ export const Works = () => {
               img={work.img}
               tags={work.tags}
               title={work.title}
-              description={work.description}
+              description={t(`works.${work.id}.description`)}
               url={work.url}
             />
           </SwiperSlide>
